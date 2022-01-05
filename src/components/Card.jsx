@@ -12,7 +12,7 @@ const Card = ({ name, createdAt, id, isDark }) => {
       <Atropos
         className="my-atropos w-full h-52 "
         shadowScale={0}
-        highlights={false}
+        highlight={false}
       >
         <div
           className="h-48 w-full py-2 px-4 overflow-hidden shadow-customDark2 rounded-lg dark:text-white dark:bg-myblack transform hover:scale-105 transition-transform duration-300 ease-in-out flex flex-col justify-start"
