@@ -11,7 +11,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Configure = ({ formId, isDark, history }) => {
-  const endPoint = `https://formifyy.netlify.app/f/${formId}`;
+  const endPoint = `https://formify-app.herokuapp.com/f/${formId}`;
 
   const [placeholder, setPlaceholder] = useState("");
   const [formName, setFormName] = useState("");

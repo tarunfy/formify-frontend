@@ -60,7 +60,7 @@ const Home = () => {
             <code className="text-left dark:text-white dark:bg-myblack leading-8 px-8 py-4 rounded-xl shadow-customDark2">
               &#60;form <strong>action="</strong>
               <span className="text-mygreen">
-                https://formifyy.netlify.app/f/XXXXXX
+                https://formify-app.herokuapp.com/f/XXXXXX
               </span>
               <strong>"</strong>
               <br /> method="POST" enctype="multipart/form-data"&#62;
