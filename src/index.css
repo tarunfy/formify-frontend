@@ -98,3 +98,8 @@ html {
   white-space: pre-wrap;
   max-width: 80%;
 }
+
+#subCard {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
