@@ -31,7 +31,7 @@ const Submissions = ({ formId }) => {
   return submissions.length < 1 ? (
     <div data-aos="fade" className="flex justify-center flex-col items-center">
       <img src={emptyState} alt="no submissions" className="h-80 w-96" />
-      <h1 className="dark:text-white text-4xl font-Nunito font-bold ">
+      <h1 className="dark:text-white text-center text-4xl font-Nunito font-bold ">
         Ooops! You have no submissions.
       </h1>
     </div>
