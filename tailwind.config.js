@@ -44,6 +44,9 @@ module.exports = {
       screens: {
         bigScreen: "1600px",
       },
+      translate: {
+        3.5: "0.80rem",
+      },
     },
   },
   variants: {
