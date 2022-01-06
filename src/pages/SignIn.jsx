@@ -47,7 +47,7 @@ const SignIn = ({ isDark }) => {
       </div>
       <div
         data-aos="fade-left"
-        className="bg-white dark:bg-myblack z-50 lg:w-96 w-80 pt-10 pb-8 px-10 shadow-customDark2 rounded-lg"
+        className="bg-white dark:bg-myblack  lg:w-96 w-80 pt-10 pb-8 px-10 shadow-customDark2 rounded-lg"
       >
         <form
           className="mb-0 space-y-6"
