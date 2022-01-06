@@ -82,3 +82,12 @@ html {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
+
+@media only screen and (min-width: 390px) {
+  #endpoint {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+    max-width: 80%;
+  }
+}

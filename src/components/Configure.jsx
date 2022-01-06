@@ -85,12 +85,15 @@ const Configure = ({ formId, isDark, history }) => {
       </div>
       <div className="flex items-center mb-4">
         <div className="p-4 dark:bg-myblack2 bg-green-50 xl:w-3/5 w-full rounded-md">
-          <p className="font-Nunito font-semibold text-mygreen2 italic xl:w-full w-4/5  xl:text-lg text-xs text-left">
+          <p
+            id="endpoint"
+            className="font-Nunito font-semibold text-mygreen2 italic xl:w-full   xl:text-lg text-sm"
+          >
             {endPoint}
           </p>
         </div>
         <div
-          className=" bg-mygreen3 transition-colors hover:bg-mygreen duration-300 ease-in-out rounded-full p-2 cursor-pointer shadow-custom3 xl:-ml-12 -ml-8"
+          className=" bg-mygreen3 transition-colors hover:bg-mygreen duration-300 ease-in-out rounded-full p-2 cursor-pointer shadow-custom3 -ml-12"
           onClick={handleCopy}
         >
           <FiCopy className="h-5 w-5 dark:text-black text-white" />
