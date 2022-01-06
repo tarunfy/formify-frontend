@@ -21,7 +21,7 @@ const Card = ({ name, createdAt, id, isDark }) => {
           <img
             src={isDark ? blob2 : blob1}
             alt=""
-            className="z-0 bg-center absolute -top-10 left-0 bg-fixed"
+            className="z-0 bg-center absolute top-0 left-0 bg-fixed"
             data-atropos-offset="-5"
           />
           <div className="z-20" data-atropos-offset="5">

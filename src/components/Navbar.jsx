@@ -24,16 +24,16 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`navbar transition-colors duration-200 ease-linear bg-white  z-40 dark:bg-black fixed top-0 w-full flex justify-between  items-center xl:px-14 xl:py-6 px-7 py-4`}
+        className={`navbar transition-colors duration-200 ease-linear bg-white  z-40 dark:bg-black fixed top-0 w-full flex justify-between  items-center tablet:px-14 tablet:py-6 px-7 py-4`}
       >
         <Link
           to="/"
-          className=" dark:text-white font-extrabold font-Montserrat xl:text-4xl text-3xl"
+          className=" dark:text-white font-extrabold font-Montserrat tablet:text-4xl text-3xl"
         >
           &#60;formify&#62;
         </Link>
         <div className="flex justify-between items-center">
-          <div className="xl:mr-11 mr-5 cursor-pointer">
+          <div className="tablet:mr-11 mr-5 cursor-pointer">
             <input
               type="checkbox"
               id="checkbox"
@@ -43,17 +43,20 @@ const Navbar = () => {
             />
             <label
               htmlFor="checkbox"
-              className="xl:w-14 xl:h-7 w-11 h-6 bg-black transition-colors duration-200 ease-linear  dark:bg-white relative  flex rounded-3xl items-center p-2 justify-between"
+              className="tablet:w-14 tablet:h-7 w-11 h-6 bg-black transition-colors duration-200 ease-linear  dark:bg-white relative  flex rounded-3xl items-center p-2 justify-between"
               id="label"
             >
-              <HiSun className="xl:h-5 xl:w-5 h-3 w-3" fill="#f5d313" />
-              <HiMoon className="xl:h-5 xl:w-5 h-3 w-3" fill="#f1c40f" />
+              <HiSun className="tablet:h-5 tablet:w-5 h-3 w-3" fill="#f5d313" />
+              <HiMoon
+                className="tablet:h-5 tablet:w-5 h-3 w-3"
+                fill="#f1c40f"
+              />
               <div
                 id="ball"
-                className={`xl:w-6 xl:h-6 w-5 h-5 cursor-pointer   bg-white dark:bg-black transition-transform transform duration-200 ease-linear absolute top-0.5 rounded-full ${
+                className={`tablet:w-6 tablet:h-6 w-5 h-5 cursor-pointer   bg-white dark:bg-black transition-transform transform duration-200 ease-linear absolute top-0.5 rounded-full ${
                   isDark
-                    ? `xl:translate-x-5 translate-x-3.5`
-                    : `xl:-translate-x-1 -translate-x-1`
+                    ? `tablet:translate-x-5 translate-x-3.5`
+                    : `tablet:-translate-x-1 -translate-x-1`
                 }`}
               ></div>
             </label>
@@ -62,14 +65,14 @@ const Navbar = () => {
           {currentUser ? (
             <>
               <div
-                className="font-bold cursor-pointer xl:text-xl xl:block hidden font-Nunito dark:text-white hover:scale-95 transition-transform duration-300 transform ease-in-out"
+                className="font-bold cursor-pointer tablet:text-xl tablet:block hidden font-Nunito dark:text-white hover:scale-95 transition-transform duration-300 transform ease-in-out"
                 onClick={logout}
               >
                 Logout
               </div>
               <Link
                 to="/dashboard"
-                className="rounded-3xl xl:ml-11 hidden font-bold xl:block text-white font-Nunito dark:text-black xl:text-xl text-base bg-mygreen3 px-6 py-2 shadow-custom4 hover:shadow-custom2 transition-shadow ease-in duration-300"
+                className="rounded-3xl tablet:ml-11 hidden font-bold tablet:block text-white font-Nunito dark:text-black tablet:text-xl text-base bg-mygreen3 px-6 py-2 shadow-custom4 hover:shadow-custom2 transition-shadow ease-in duration-300"
               >
                 Dashboard
               </Link>
@@ -78,7 +81,7 @@ const Navbar = () => {
             <>
               <Link
                 to="/signin"
-                className={`font-bold xl:text-xl xl:block hidden font-Nunito dark:text-white hover:scale-95 transition-transform duration-300 transform ease-in-out ${
+                className={`font-bold tablet:text-xl tablet:block hidden font-Nunito dark:text-white hover:scale-95 transition-transform duration-300 transform ease-in-out ${
                   location.pathname === "/reset-password" && `hidden`
                 }`}
               >
@@ -86,7 +89,7 @@ const Navbar = () => {
               </Link>
               <Link
                 to="/signup"
-                className={`rounded-3xl xl:ml-11 xl:block hidden font-bold text-white font-Nunito dark:text-black xl:text-xl text-base bg-mygreen3 xl:px-6 xl:py-2 px-3 py-1 shadow-custom hover:shadow-custom2 transition-shadow ease-in duration-300 ${
+                className={`rounded-3xl tablet:ml-11 tablet:block hidden font-bold text-white font-Nunito dark:text-black tablet:text-xl text-base bg-mygreen3 tablet:px-6 tablet:py-2 px-3 py-1 shadow-custom hover:shadow-custom2 transition-shadow ease-in duration-300 ${
                   location.pathname === "/reset-password" && `hidden`
                 }`}
               >
@@ -95,7 +98,7 @@ const Navbar = () => {
             </>
           )}
           <FaBars
-            className="xl:hidden dark:text-white h-6 w-6 cursor-pointer"
+            className="tablet:hidden dark:text-white h-6 w-6 cursor-pointer"
             onClick={() => setSidebar(true)}
           />
         </div>
@@ -103,8 +106,8 @@ const Navbar = () => {
       <div
         className={
           sidebar
-            ? "duration-300 ease-linear xl:hidden h-screen flex flex-col justify-start items-end fixed w-full z-50 top-0 right-0 py-6 px-6 transition-all dark:bg-black bg-white dark:text-white"
-            : "duration-300 ease-linear xl:hidden h-screen flex flex-col justify-start items-end fixed w-full z-50 top-0 -right-full  py-6 px-6 transition-all dark:bg-black bg-white dark:text-white"
+            ? "duration-300 ease-linear tablet:hidden h-screen flex flex-col justify-start items-end fixed w-full z-50 top-0 right-0 py-6 px-6 transition-all dark:bg-black bg-white dark:text-white"
+            : "duration-300 ease-linear tablet:hidden h-screen flex flex-col justify-start items-end fixed w-full z-50 top-0 -right-full  py-6 px-6 transition-all dark:bg-black bg-white dark:text-white"
         }
       >
         {currentUser ? (
