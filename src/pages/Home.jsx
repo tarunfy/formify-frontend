@@ -45,7 +45,7 @@ const Home = () => {
           >
             Stress free HTML forms.
           </p>
-          <p className="tablet:mt-8 mt-2 text-mygrey2 dark:text-mygrey tablet:leading-8 leading-normal  font-medium font-Nunito tablet:text-2xl text-lg tablet:px-0 px-4">
+          <p className="tablet:mt-8 smallTable:text-lg mt-2 text-mygrey2 dark:text-mygrey tablet:leading-8 leading-normal  font-medium font-Nunito tablet:text-2xl text-lg tablet:px-0 px-4">
             Collect form submissions from your HTML form without any backend
             code
             <br />
