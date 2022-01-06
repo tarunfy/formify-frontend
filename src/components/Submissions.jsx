@@ -36,7 +36,7 @@ const Submissions = ({ formId }) => {
       </h1>
     </div>
   ) : (
-    <div className="grid grid-cols-3 bigScreen:gap-4 gap-6 p-4 max-h-11/12 overflow-x-hidden overflow-y-scroll">
+    <div className="grid xl:grid-cols-3 grid-cols-1 bigScreen:gap-4 gap-6  p-4 max-h-11/12 overflow-x-hidden overflow-y-scroll">
       {submissions.map((submission, index) => (
         <SubmissionCard key={index} submission={submission} />
       ))}
