@@ -20,6 +20,7 @@ const Home = () => {
           our problem. Not yours.
         </p>
         <p
+          id="heroSubtitle"
           data-aos="fade"
           className="tablet:leading-8 smallTable:text-lg tablet:mt-8 mt-4 font-Nunito text-mygrey2 dark:text-mygrey font-medium tablet:text-2xl text-sm"
         >
