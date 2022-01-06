@@ -21,7 +21,7 @@ const Home = () => {
         </p>
         <p
           data-aos="fade"
-          className="tablet:leading-8 tablet:mt-8 mt-4 font-Nunito text-mygrey2 dark:text-mygrey font-medium tablet:text-2xl text-sm"
+          className="tablet:leading-8 smallTable:text-lg tablet:mt-8 mt-4 font-Nunito text-mygrey2 dark:text-mygrey font-medium tablet:text-2xl text-sm"
         >
           Formify completely automates your HTML &#60;form&#62; <br />
           So you can focus on your most important work. <br />
@@ -45,7 +45,7 @@ const Home = () => {
           >
             Stress free HTML forms.
           </p>
-          <p className="tablet:mt-8 smallTable:text-lg mt-2 text-mygrey2 dark:text-mygrey tablet:leading-8 leading-normal  font-medium font-Nunito tablet:text-2xl text-lg tablet:px-0 px-4">
+          <p className="tablet:mt-8  mt-2 text-mygrey2 dark:text-mygrey tablet:leading-8 leading-normal  font-medium font-Nunito tablet:text-2xl text-lg tablet:px-0 px-4">
             Collect form submissions from your HTML form without any backend
             code
             <br />
