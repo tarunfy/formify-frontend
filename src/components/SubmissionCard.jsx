@@ -18,7 +18,7 @@ const SubmissionCard = ({ submission }) => {
             className="dark:text-white flex justify-between items-center font-Nunito"
           >
             <p className="font-bold">{key}:</p>
-            <p className="text-right">{submission[key]}</p>
+            <p className="text-right w-2/4">{submission[key]}</p>
           </div>
         );
       })}
