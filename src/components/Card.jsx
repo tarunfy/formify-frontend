@@ -25,7 +25,7 @@ const Card = ({ name, createdAt, id, isDark }) => {
             data-atropos-offset="-5"
           />
           <div className="z-20" data-atropos-offset="5">
-            <h1 className="font-Nunito font-bold text-2xl overflow-hidden">
+            <h1 id="cardName" className="font-Nunito font-bold text-2xl">
               {name}
             </h1>
             <p className="font-Nunito text-xs font-medium dark:text-gray-100 text-gray-800">

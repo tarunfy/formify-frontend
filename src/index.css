@@ -91,3 +91,10 @@ html {
     max-width: 80%;
   }
 }
+
+#cardName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
+  max-width: 80%;
+}
