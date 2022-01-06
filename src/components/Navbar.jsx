@@ -95,7 +95,7 @@ const Navbar = () => {
             </>
           )}
           <FaBars
-            className="xl:hidden dark:text-white h-6 w-6"
+            className="xl:hidden dark:text-white h-6 w-6 cursor-pointer"
             onClick={() => setSidebar(true)}
           />
         </div>
@@ -110,12 +110,12 @@ const Navbar = () => {
         {currentUser ? (
           <>
             <AiOutlineClose
-              className=" dark:text-white h-6 w-6 self-end"
+              className=" dark:text-white h-6 w-6 self-end cursor-pointer"
               onClick={() => setSidebar(false)}
-              strokeWidth="30px"
+              strokeWidth="50px"
             />
             <div
-              className="font-bold font-Montserrat text-center text-4xl w-full mt-10"
+              className="font-bold font-Montserrat text-center text-4xl w-full mt-10 cursor-pointer"
               onClick={logout}
             >
               Logout
@@ -133,7 +133,7 @@ const Navbar = () => {
             <AiOutlineClose
               className=" dark:text-white h-6 w-6 self-end"
               onClick={() => setSidebar(false)}
-              strokeWidth="30px"
+              strokeWidth="50px"
             />
             <Link
               to="/signin"
