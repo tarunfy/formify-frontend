@@ -31,7 +31,7 @@ const Home = () => {
           data-aos="fade"
           src={hero}
           alt="hero"
-          className="tablet:h-80 tablet:w-80 h-72 w-72 tablet:mt-0 mt-10"
+          className="tablet:h-80 tablet:w-80 h-72 w-72 tablet:mt-0 smallTable:mt-5 mt-10"
         />
       </div>
       <div className="h-screen flex flex-col tablet:justify-evenly justify-around dark:bg-black">
