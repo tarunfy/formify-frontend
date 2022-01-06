@@ -85,7 +85,7 @@ const Configure = ({ formId, isDark, history }) => {
       </div>
       <div className="flex items-center mb-4">
         <div className="p-4 dark:bg-myblack2 bg-green-50 xl:w-3/5 w-full rounded-md">
-          <p className="font-Nunito font-semibold text-mygreen2 italic xl:w-full w-4/5  xl:text-lg text-sm">
+          <p className="font-Nunito font-semibold text-mygreen2 italic xl:w-full w-4/5  xl:text-lg text-xs text-left">
             {endPoint}
           </p>
         </div>
