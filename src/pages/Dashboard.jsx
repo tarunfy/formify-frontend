@@ -64,7 +64,7 @@ const Dashboard = ({ isDark, ...props }) => {
           </button>
         </div>
         {forms.length > 0 ? (
-          <div className="h-5/6 w-5/6 mb-5 p-4 rounded-md grid xl:grid-cols-4 xl:gap-6 grid-cols-1 gap-5  overflow-x-hidden overflow-y-scroll">
+          <div className="h-5/6 w-5/6 mb-5 p-4 rounded-md grid tablet:grid-cols-2 xl:grid-cols-4 xl:gap-6 grid-cols-1 gap-5  overflow-x-hidden overflow-y-scroll">
             {forms.map((form) => (
               <Card
                 key={form._id}

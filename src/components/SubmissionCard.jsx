@@ -9,7 +9,7 @@ const SubmissionCard = ({ submission }) => {
   return (
     <div
       id="subCard"
-      className="h-72 w-96  shadow-customDark2 px-4 dark:bg-myblack2 rounded-md flex flex-col justify-evenly hover:scale-105 cursor-pointer transform transition-transform duration-300 ease-in-out"
+      className="h-72 tablet:w-96 w-full  shadow-customDark2 px-4 dark:bg-myblack2 rounded-md flex flex-col justify-evenly hover:scale-105 cursor-pointer transform transition-transform duration-300 ease-in-out"
     >
       {Object.keys(submission).map((key, index) => {
         return (
