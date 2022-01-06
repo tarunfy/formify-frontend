@@ -90,10 +90,10 @@ const Configure = ({ formId, isDark, history }) => {
           </p>
         </div>
         <div
-          className=" bg-mygreen3 transition-colors hover:bg-mygreen duration-300 ease-in-out rounded-full p-2 cursor-pointer shadow-custom3 -ml-12"
+          className=" bg-mygreen3 transition-colors hover:bg-mygreen duration-300 ease-in-out rounded-full xl:p-2 p-1 cursor-pointer shadow-custom3 xl:-ml-12 -ml-10"
           onClick={handleCopy}
         >
-          <FiCopy className="h-5 w-5 dark:text-black text-white" />
+          <FiCopy className="xl:h-5 xl:w-5 h-4 w-4 dark:text-black text-white" />
         </div>
       </div>
       <div className="flex items-center mb-4">
