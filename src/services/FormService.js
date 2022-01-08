@@ -57,12 +57,12 @@ class FormService {
     }
     return result;
   }
-  async updateForm(formId, formName, webhookUrl, returnUrl) {
+  async updateForm(formId, formName, webhookUrls, returnUrl) {
     const result = new Result();
     try {
       const res = await axiosInstance.put(`update-form/${formId}`, {
         formName,
-        webhookUrl,
+        webhookUrls,
         returnUrl,
       });
       result.data = res.data.message;

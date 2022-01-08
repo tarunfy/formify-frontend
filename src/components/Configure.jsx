@@ -15,7 +15,7 @@ const Configure = ({ formId, isDark, history }) => {
 
   const [placeholder, setPlaceholder] = useState("");
   const [formName, setFormName] = useState("");
-  const [webhookUrl, setWebhookUrl] = useState("");
+  const [webhookUrls, setWebhookUrls] = useState([]);
   const [returnUrl, setReturnUrl] = useState("");
 
   const { currentUser, setCurrentUser } = useContext(AuthContext);
@@ -43,14 +43,14 @@ const Configure = ({ formId, isDark, history }) => {
     const res = await formService.updateForm(
       formId,
       formName,
-      webhookUrl,
+      webhookUrls,
       returnUrl
     );
     if (res.isSuccessful()) {
       toast.success(`${res.data} ✌`);
       setFormName("");
       setReturnUrl("");
-      setWebhookUrl("");
+      setWebhookUrls([]);
     }
     if (res.hasError()) {
       setCurrentUser(null);
@@ -118,8 +118,9 @@ const Configure = ({ formId, isDark, history }) => {
         <h4 className="text-xl font-semibold font-Nunito">Webhook Url</h4>
         <input
           type="text"
-          value={webhookUrl}
-          onChange={(e) => setWebhookUrl(e.target.value)}
+          onChange={(e) =>
+            setWebhookUrls(...webhookUrls, e.target.value.split(","))
+          }
           className="border w-2/4 border-gray-300 dark:border-gray-500 dark:bg-myblack dark:text-white px-3 py-2 rounded-lg shadow-sm focus:outline-none"
         />
       </div>
@@ -140,9 +141,9 @@ const Configure = ({ formId, isDark, history }) => {
         <button
           onClick={handleUpdate}
           className={`rounded-3xl font-bold text-white font-Nunito  dark:text-black text-xl bg-mygreen3 px-6 py-2 transform transition-transform hover:scale-95 ${
-            !formName && !webhookUrl && !returnUrl && `opacity-50`
+            !formName && !webhookUrls && !returnUrl && `opacity-50`
           }`}
-          disabled={!formName && !webhookUrl && !returnUrl}
+          disabled={!formName && !webhookUrls && !returnUrl}
         >
           Update
         </button>
