@@ -13,16 +13,9 @@ import { AuthContext } from "./contexts/AuthContext.jsx";
 import { ThemeContext } from "./contexts/ThemeContext.jsx";
 
 const App = () => {
-  const { currentUser, fetching } = useContext(AuthContext);
+  const { currentUser } = useContext(AuthContext);
   const { isDark } = useContext(ThemeContext);
 
-  if (fetching) {
-    return (
-      <div className="flex text-2xl w-screen h-screen  justify-center items-center">
-        Loading...
-      </div>
-    );
-  }
   return (
     <>
       <div className={isDark ? `dark` : ``}>

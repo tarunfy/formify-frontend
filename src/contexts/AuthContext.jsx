@@ -17,13 +17,9 @@ export const AuthProvider = ({ children }) => {
       if (res.status === 200) {
         setCurrentUser(res.data.user);
       }
-      setTimeout(() => {
-        setFetching(false);
-      }, 1500);
+      setFetching(false);
     } catch (err) {
-      setTimeout(() => {
-        setFetching(false);
-      }, 1500);
+      setFetching(false);
     }
   };
 
