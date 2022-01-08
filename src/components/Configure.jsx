@@ -15,7 +15,7 @@ const Configure = ({ formId, isDark, history }) => {
 
   const [placeholder, setPlaceholder] = useState("");
   const [formName, setFormName] = useState("");
-  const [webhookUrls, setWebhookUrls] = useState("");
+  const [webhookUrl, setWebhookUrl] = useState("");
   const [returnUrl, setReturnUrl] = useState("");
 
   const { currentUser, setCurrentUser } = useContext(AuthContext);
@@ -43,13 +43,14 @@ const Configure = ({ formId, isDark, history }) => {
     const res = await formService.updateForm(
       formId,
       formName,
-      webhookUrls,
+      webhookUrl,
       returnUrl
     );
     if (res.isSuccessful()) {
       toast.success(`${res.data} ✌`);
       setFormName("");
       setReturnUrl("");
+      setWebhookUrl("");
     }
     if (res.hasError()) {
       setCurrentUser(null);
@@ -117,8 +118,8 @@ const Configure = ({ formId, isDark, history }) => {
         <h4 className="text-xl font-semibold font-Nunito">Webhook Url</h4>
         <input
           type="text"
-          value={webhookUrls}
-          onChange={(e) => setWebhookUrls(e.target.value)}
+          value={webhookUrl}
+          onChange={(e) => setWebhookUrl(e.target.value)}
           className="border w-2/4 border-gray-300 dark:border-gray-500 dark:bg-myblack dark:text-white px-3 py-2 rounded-lg shadow-sm focus:outline-none"
         />
       </div>
