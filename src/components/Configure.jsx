@@ -10,10 +10,9 @@ import "aos/dist/aos.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const webhooks = "";
-
 const Configure = ({ formId, isDark, history }) => {
   const endPoint = `https://formify-app.herokuapp.com/f/${formId}`;
+  const webhooks = "";
 
   const [placeholder, setPlaceholder] = useState("");
   const [formName, setFormName] = useState("");
