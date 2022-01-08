@@ -127,3 +127,8 @@ html {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+
+#sidebar {
+  transition: background-color 0.3s linear;
+  transition: color 0.3s linear;
+}
