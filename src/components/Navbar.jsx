@@ -107,7 +107,7 @@ const Navbar = () => {
         className={
           sidebar
             ? "duration-300 ease-linear tablet:hidden h-screen flex flex-col justify-start items-end fixed w-full z-50 top-0 right-0 py-6 px-6 transition-all dark:bg-black bg-white dark:text-white"
-            : "duration-300 ease-linear tablet:hidden h-screen flex flex-col justify-start items-end fixed w-full z-50 top-0 -right-full  py-6 px-6 transition-all dark:bg-black bg-white dark:text-white"
+            : "duration-300 ease-out tablet:hidden h-screen flex flex-col justify-start items-end fixed w-full z-50 top-0 -right-full  py-6 px-6 transition-all dark:bg-black bg-white dark:text-white"
         }
       >
         {currentUser ? (
