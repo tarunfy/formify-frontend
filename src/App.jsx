@@ -18,7 +18,7 @@ const App = () => {
 
   if (fetching) {
     return (
-      <div className="flex h-screen w-full justify-center items-center">
+      <div className="flex text-2xl w-screen h-screen  justify-center items-center">
         Loading...
       </div>
     );
