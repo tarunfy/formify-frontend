@@ -10,6 +10,8 @@ import "aos/dist/aos.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+const webhooks = "";
+
 const Configure = ({ formId, isDark, history }) => {
   const endPoint = `https://formify-app.herokuapp.com/f/${formId}`;
 
@@ -119,7 +121,10 @@ const Configure = ({ formId, isDark, history }) => {
         <h4 className="text-xl font-semibold font-Nunito">Webhook Url</h4>
         <input
           type="text"
-          onChange={(e) => setWebhookUrls(e.target.value.split(","))}
+          value={webhooks}
+          onChange={(e) =>
+            setWebhookUrls([...webhookUrls, webhooks.split(",")])
+          }
           className="border w-2/4 border-gray-300 dark:border-gray-500 dark:bg-myblack dark:text-white px-3 py-2 rounded-lg shadow-sm focus:outline-none"
         />
       </div>
