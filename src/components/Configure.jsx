@@ -12,12 +12,12 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Configure = ({ formId, isDark, history }) => {
   const endPoint = `https://formify-app.herokuapp.com/f/${formId}`;
-  const webhooks = "";
 
   const [placeholder, setPlaceholder] = useState("");
   const [formName, setFormName] = useState("");
   const [webhookUrls, setWebhookUrls] = useState([]);
   const [returnUrl, setReturnUrl] = useState("");
+  const [urls, setUrls] = useState("");
 
   const { currentUser, setCurrentUser } = useContext(AuthContext);
 
@@ -41,6 +41,7 @@ const Configure = ({ formId, isDark, history }) => {
 
   const handleUpdate = async (e) => {
     e.preventDefault();
+    setWebhookUrls([...webhookUrls, urls.split(",")]);
     console.log(webhookUrls);
     const res = await formService.updateForm(
       formId,
@@ -120,10 +121,8 @@ const Configure = ({ formId, isDark, history }) => {
         <h4 className="text-xl font-semibold font-Nunito">Webhook Url</h4>
         <input
           type="text"
-          value={webhooks}
-          onChange={(e) =>
-            setWebhookUrls([...webhookUrls, webhooks.split(",")])
-          }
+          value={urls}
+          onChange={(e) => setUrls(e.target.value)}
           className="border w-2/4 border-gray-300 dark:border-gray-500 dark:bg-myblack dark:text-white px-3 py-2 rounded-lg shadow-sm focus:outline-none"
         />
       </div>
