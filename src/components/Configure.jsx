@@ -40,6 +40,7 @@ const Configure = ({ formId, isDark, history }) => {
 
   const handleUpdate = async (e) => {
     e.preventDefault();
+    console.log(webhookUrls);
     const res = await formService.updateForm(
       formId,
       formName,
