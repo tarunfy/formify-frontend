@@ -140,9 +140,9 @@ const Configure = ({ formId, isDark, history }) => {
         <button
           onClick={handleUpdate}
           className={`rounded-3xl font-bold text-white font-Nunito  dark:text-black text-xl bg-mygreen3 px-6 py-2 transform transition-transform hover:scale-95 ${
-            !formName && !webhookUrls && !returnUrl && `opacity-50`
+            !formName && !webhookUrl && !returnUrl && `opacity-50`
           }`}
-          disabled={!formName && !webhookUrls && !returnUrl}
+          disabled={!formName && !webhookUrl && !returnUrl}
         >
           Update
         </button>
