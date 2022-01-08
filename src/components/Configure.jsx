@@ -119,9 +119,7 @@ const Configure = ({ formId, isDark, history }) => {
         <h4 className="text-xl font-semibold font-Nunito">Webhook Url</h4>
         <input
           type="text"
-          onChange={(e) =>
-            setWebhookUrls(...webhookUrls, e.target.value.split(","))
-          }
+          onChange={(e) => setWebhookUrls(e.target.value.split(","))}
           className="border w-2/4 border-gray-300 dark:border-gray-500 dark:bg-myblack dark:text-white px-3 py-2 rounded-lg shadow-sm focus:outline-none"
         />
       </div>
