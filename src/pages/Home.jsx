@@ -79,7 +79,7 @@ const Home = () => {
                 https://formify-app.herokuapp.com/f/XXXXXX
               </span>
               <strong>"</strong>
-              <br /> method="POST" enctype="multipart/form-data"&#62;
+              <br /> method="POST" accept-charset="UTF-8"&#62;
               <br />
               &nbsp;&nbsp;&nbsp;&nbsp;&#60;input type="email" name="email"&#62;
               <br />
