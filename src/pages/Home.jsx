@@ -76,7 +76,7 @@ const Home = () => {
             <code className="text-left tablet:text-sm text-xs  dark:text-white dark:bg-myblack tablet:leading-8 leading-normal px-8 py-4  rounded-xl shadow-customDark2">
               &#60;form <strong>action="</strong>
               <span className="text-mygreen">
-                https://formify-app.herokuapp.com/f/XXXXXX
+                {process.env.REACT_APP_BASE_URL}f/XXXXXX
               </span>
               <strong>"</strong>
               <br /> method="POST" accept-charset="UTF-8"&#62;

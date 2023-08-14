@@ -11,7 +11,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Configure = ({ formId, isDark, history }) => {
-  const endPoint = `https://formify-app.herokuapp.com/f/${formId}`;
+  const endPoint = `${process.env.REACT_APP_BASE_URL}f/${formId}`;
 
   const [placeholder, setPlaceholder] = useState("");
   const [formName, setFormName] = useState("");
